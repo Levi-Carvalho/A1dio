@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+  <html lang="pt-BR">
+  <head>
+    <meta charset='utf-8'>
+    <title>SoundsPlayer</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <meta name="description" content="hmmm um player longe de estar pronto">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="cubo.css">
+    <link rel="shortcut icon" href="#">
+  </head>
+  <body>
+
+    <audio src="musics/itte.mp3" type="audio/mpeg" data-autor="Yurashika" data-Name="Itte" data-id="1" controls style="display: none;"></audio>
+    
+    
+
+    <div class="container">
+
+      <div class="audio-player-box">
+
+        <!-- <section class="padding-do-odio"></section> -->
+        <section class="up-music-box">
+
+          <div class="cubo">
+            <div class="face face--1"></div>
+            <div class="face face--2"></div>
+            <div class="face face--3"></div>
+            <div class="face face--4"></div>
+            <div class="face face--5"></div>
+            <div class="face face--6"></div>
+          </div>
+
+        </section>
+
+        <div class="curr-music-data">
+          <div class="curr-music-name">♪ Itte</div> 
+          <div class="music-autor curr-autor">Yurushika</div>
+        </div>
+        
+        <div class="progress-bar-div">
+          <input class="progress-bar" id="pb" type="range" value="0" max="100">
+        </div>
+        
+        <section class="controller-box">
+          <button class="btn btn-change audio-left">⏮</button>
+          <button class="btn btn-play">▶️</button>
+          <button class="btn btn-change audio-right">⏭</button>
+          <button class="btn btnVolumeDown">🔽</button>
+          <button class="btn btnVolumeUp">🔼</button>
+          <span class="timer curr-progress">00:00 /</span><span class="timer total-duration"> / 00:00</span>
+        </section>
+
+        
+      </div>
+
+      <section class="musics-box"></section>
+      
+    </div>
+    <label for="pb">okokok</label>
+
+    <script src="js/main.js"></script>
+    <script src="js/musicsLoad.js"></script>
+  </body>
+</html>

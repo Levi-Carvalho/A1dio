@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif; }
+
+body {
+  background-color: #060713; }
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: nowrap; }
+
+.audio-player-box {
+  background: black;
+  width: 800px;
+  min-width: 230px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  color: white;
+  font-weight: 600; }
+
+.curr-music-data {
+  padding: 10px 28px;
+  display: flex;
+  flex-direction: column; }
+
+.controller-box {
+  display: flex;
+  padding: 12px;
+  padding-top: 4px;
+  background: rgba(0, 0, 0, 0.562);
+  color: white; }
+  .controller-box .btn {
+    background: none;
+    border: none;
+    font-size: 1.8em;
+    font-weight: bolder;
+    height: 35px;
+    width: 35px;
+    margin: 0 6px;
+    color: inherit; }
+    .controller-box .btn:hover {
+      cursor: pointer; }
+
+.progress-bar-div {
+  padding: 0 20px;
+  font-size: 0.8em; }
+
+.progress-bar {
+  width: 100%;
+  height: 4px;
+  padding: 0px 0px; }
+
+.up-music-box {
+  height: 200px;
+  background: #462f04;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.padding-do-odio {
+  background-color: rgba(0, 0, 0, 0.911);
+  height: 98px; }
+
+.musics-box {
+  display: flex;
+  flex-direction: column;
+  width: 800px;
+  background: darkgoldenrod;
+  overflow-y: auto; }
+
+.music {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.911);
+  border-bottom: 1px solid rgba(201, 201, 201, 0.11);
+  padding: 10px 20px;
+  color: white; }
+  .music:hover {
+    background-color: rgba(27, 27, 27, 0.911);
+    cursor: pointer; }
+
+.music-name {
+  font-weight: 600;
+  letter-spacing: 0.08em; }
+
+.music-autor {
+  color: rgba(247, 247, 247, 0.575);
+  padding-left: 0px;
+  padding-top: 2px;
+  font-size: 0.9em;
+  font-style: italic; }
+
+.timer {
+  margin-top: 8px;
+  font-size: 0.72em;
+  align-self: center; }
+
+.curr-autor {
+  padding-left: 10px; }
+
+.musics-box::-webkit-scrollbar {
+  width: 8px; }
+
+.musics-box::-webkit-scrollbar-track {
+  background: #363636;
+  border: 1px solid #535353; }
+
+.musics-box::-webkit-scrollbar-thumb {
+  background-color: #1a1a1a;
+  border-right: 1px solid #535353;
+  border-left: 1px solid #535353; }
+
+@media only screen and (max-width: 670px) {
+  .container {
+    flex-wrap: wrap; } }
+.highlighted {
+  background-color: rgba(27, 27, 27, 0.911);
+  transition-duration: 0.5s; }
+
+/*# sourceMappingURL=styles.css.map */
