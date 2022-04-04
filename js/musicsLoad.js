@@ -182,6 +182,7 @@ musicBox.style.height = `${window.innerHeight}px`;
 const changeWidth = () => {
   if(window.innerWidth < 670)
   musicBox.style.height = `${window.innerHeight - 322}px`;
+  else musicBox.style.height = `${window.innerHeight}px`;
 }
 changeWidth();
 window.addEventListener('resize', changeWidth);
