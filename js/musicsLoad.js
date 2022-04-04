@@ -153,7 +153,7 @@ controllerBox.addEventListener('click', function (e) {
   let el;
   if(!e.target.classList.contains('btn-change')) return;
   if(
-    (e.target === btnRight && currId == 4) ||
+    (e.target === btnRight && currId == 18) ||
     (e.target === btnLeft && currId == 1)
     ) return;
 
@@ -179,6 +179,10 @@ function setNewAudio (el) {
 
 musicBox.style.height = `${window.innerHeight}px`;
 
-const changeWidth = () => {musicBox.style.height = window.innerHeight + 'px';}
-
+const changeWidth = () => {
+  if(window.innerWidth < 670)
+  musicBox.style.height = `${window.innerHeight - 322}px`;
+}
+changeWidth();
 window.addEventListener('resize', changeWidth);
+
