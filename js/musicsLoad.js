@@ -15,9 +15,9 @@ const musics = [
 
   {
     id: '3',
-    name: 'Como vovó já dizia',
-    autor: 'Raul Seixas',
-    sourse: 'musics/vovo-ja-dizia.mp3'
+    name: 'No cume',
+    autor: 'Falcão',
+    sourse: 'musics/no-cume.mp3'
   },
 
   {
@@ -123,6 +123,13 @@ const musics = [
     name: 'União Flasco',
     autor: 'Luckhaos',
     sourse: 'musics/uniao-flasco.mp3'
+  },
+
+  {
+    id: '19',
+    name: 'Como vovó já dizia',
+    autor: 'Raul Seixas',
+    sourse: 'musics/vovo-ja-dizia.mp3'
   },
 ]
 
